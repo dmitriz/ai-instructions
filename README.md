@@ -33,9 +33,12 @@ README.md                           # Overview and setup instructions
 collected/
   raw-drops.md                     # Unfiltered instruction examples
 cleaned/
-  prompt-templates.md              # Curated prompt templates
-  instruction-guides.md            # Best practices and guidelines
+  ai-instruction-principles.md     # Core principles and frameworks
   examples.md                      # Real-world instruction examples
+  github-copilot-best-practices.md # Advanced Copilot strategies
+  implementation-guide.md          # Step-by-step implementation guide
+  instruction-guides.md            # Best practices and guidelines
+  prompt-templates.md              # Curated prompt templates
 workflow/
   copilot-automation.md           # AI agent maintenance guidelines
 .github/
