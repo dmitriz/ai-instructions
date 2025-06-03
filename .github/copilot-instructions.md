@@ -134,9 +134,3 @@ Instructions for AI agents to assist in maintaining and organizing this reposito
 * Ensure all file names and folder names use lowercase with hyphens.
 * Place each file in the correct directory as specified.
 * Do not nest folders beyond the structure shown above.
-
-```
-
----
-
-Once you place this in your repo (e.g., at `.github/copilot-instructions.md`), Copilot can use it as a foundation for structured contributions and maintenance. Let me know when you're ready to push it, and I’ll provide the GitHub file creation links.
