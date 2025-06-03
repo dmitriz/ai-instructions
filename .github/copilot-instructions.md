@@ -1,136 +1,36 @@
-# Copilot Setup Instructions for Repository Initialization
+# Copilot Instructions for AI Instructions Repository
 
-## Objective
+## Repository Context
 
-Initialize the `ai-instructions` repository with a structured set of folders and files to manage, refine, and maintain AI usage instructions.
+This repository manages AI instruction patterns and templates. Focus on maintaining clean, reusable instructions while avoiding duplication and instruction drift.
 
----
+## Coding Guidelines
 
-## File Creation Tasks
+- Use lowercase with hyphens for all file and folder names
+- Maintain clear separation between raw (`collected/`) and curated (`cleaned/`) content
+- Keep file structure flat (maximum 2 levels deep)
+- Follow markdown best practices with consistent formatting
 
-Create the following files with the specified content:
+## Maintenance Tasks
 
----
+When working in this repository:
 
-### 1. File: `README.md`
+1. **Organizing Raw Content**: Help categorize entries in `collected/raw-drops.md` into appropriate sections
+2. **Content Promotion**: Identify high-quality instructions to move from `collected/` to `cleaned/` directories
+3. **Quality Enhancement**: Suggest improvements for clarity and effectiveness of existing instructions
+4. **Duplicate Detection**: Identify and help consolidate similar or redundant instructions
+5. **Template Creation**: Help create reusable templates from successful instruction patterns
 
-```markdown
-# AI Instructions
+## File Organization Priorities
 
-Centralized, clean, and reusable instruction patterns for AI agents (Copilot, ChatGPT, Claude) with an emphasis on guardrails and instruction quality control.
+- **collected/raw-drops.md**: Accept any format, no organization required
+- **cleaned/**: Ensure consistent formatting and clear categorization
+- **workflow/**: Focus on actionable automation guidelines
+- **README.md**: Keep overview current with repository structure
 
-## Purpose
+## Quality Standards
 
-- Avoid instruction drift and duplication.
-- Build reusable, context-free instruction sets.
-- Establish and evolve quality guardrails.
-- Collect rapidly, organize minimally, and clean only when reuse demands it.
-
-## Structure
-
-- `collected/raw-drops.md`: Raw, unfiltered instruction examples.
-- `cleaned/`: Curated and formatted instructions ready for reuse.
-- `workflow/copilot-automation.md`: Guidelines for AI agents to assist in maintaining this repository.
-
-## Usage
-
-1. **Daily**: Append new findings to `collected/raw-drops.md`.
-2. **Weekly**: Review and promote valuable instructions to the `cleaned/` directory.
-3. **Automation**: Utilize `workflow/copilot-automation.md` to guide AI agents in organizing and enhancing instructions.
-```
-
----
-
-### 2. File: `collected/raw-drops.md`
-
-```markdown
-# Raw Instruction Drops
-
-Paste all new instruction examples, prompts, and insights here. No formatting or organization required.
-```
-
----
-
-### 3. File: `cleaned/prompt-templates.md`
-
-```markdown
-# Prompt Templates
-
-Curated templates for AI prompts, organized by use-case.
-
-## Code Generation
-
-- **Task**: Generate a Python function to calculate factorial.
-  **Prompt**: "Write a Python function named `calculate_factorial` that returns the factorial of a given number."
-
-## Documentation
-
-- **Task**: Document a REST API endpoint.
-  **Prompt**: "Provide OpenAPI documentation for a GET endpoint at `/users/{id}` that retrieves user information by ID."
-```
-
----
-
-### 4. File: `cleaned/instruction-guides.md`
-
-```markdown
-# Instruction Guides
-
-Best practices and guidelines for crafting effective AI instructions.
-
-## General Guidelines
-
-- Be specific and concise.
-- Avoid ambiguous language.
-- Provide context when necessary.
-
-## Copilot-Specific
-
-- Utilize `copilot-instructions.md` to define repository-wide standards.
-- Regularly update instructions to reflect codebase changes.
-```
-
----
-
-### 5. File: `cleaned/examples.md`
-
-```markdown
-# Instruction Examples
-
-Real-world examples of effective AI instructions.
-
-## Example 1
-
-- **Context**: Refactoring legacy code.
-- **Instruction**: "Refactor the `process_data` function to improve readability and performance without changing its external behavior."
-
-## Example 2
-
-- **Context**: Writing unit tests.
-- **Instruction**: "Create unit tests for the `authenticate_user` function covering successful login, failed login, and exception handling."
-```
-
----
-
-### 6. File: `workflow/copilot-automation.md`
-
-```markdown
-# Copilot Automation Guidelines
-
-Instructions for AI agents to assist in maintaining and organizing this repository.
-
-## Tasks
-
-1. **Organize `raw-drops.md`**: Categorize entries into relevant sections.
-2. **Promote Valuable Instructions**: Identify and move high-quality instructions to the `cleaned/` directory.
-3. **Enhance Instructions**: Suggest improvements for clarity and effectiveness.
-4. **Identify Duplicates**: Detect and consolidate similar instructions.
-```
-
----
-
-## Final Notes
-
-* Ensure all file names and folder names use lowercase with hyphens.
-* Place each file in the correct directory as specified.
-* Do not nest folders beyond the structure shown above.
+- Instructions should be specific and actionable
+- Avoid ambiguous language
+- Provide context when necessary
+- Test instructions before promoting to `cleaned/` directory
